@@ -7,6 +7,7 @@ Mijn missie is om mijn kennis en vaardigheden in software development voortduren
 Portfolio maken waarbij ik mijn technische kwaliteiten laten zien.
 
 ### Leerdoelen
+Ik wil mijn vaardigheden in het ontwikkelen van software verbeteren door het leren van nieuwe programmeertalen en frameworks, en door te werken aan complexe projecten die me uitdagen om problemen op te lossen en creatieve oplossingen te bedenken. Ik wil ook mijn begrip van best practices in softwareontwikkeling vergroten, zoals code reviews, unit testing en version control, en deze toepassen in mijn eigen werk om betrouwbare en goed onderhoudbare code te produceren.
 **Escape de matrix**
 | Leerdoel      | Bron      | Programmertaal | afgerond | 
 | ------------- | ----------| -------------- | -------- |
