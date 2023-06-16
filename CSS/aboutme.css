@@ -1,0 +1,30 @@
+h1 {
+    font-family: 'Righteous', cursive;
+    /* color: white; */
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+.wrapper{
+    border: 2px solid black;
+    width: 100px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: black;
+}
+.light-switch{
+    border: 2px solid black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+}
+.margin{
+    transition: ease-in 250ms;
+    margin-left: 40px;
+}
+.hidden{
+    display: none;
+}
