@@ -1,0 +1,291 @@
+body{
+    background-color: lightsteelblue;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.startScreen{
+    border: 2px solid;
+    text-align: center;
+}
+button{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.startGame{
+    width: 120px;
+    height: 40px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background-color: lightcoral;
+    transition: ease-in-out 250ms;
+}
+.startGame:hover{
+    background-color: lightblue;
+    border-radius: 50px;
+    transform: translateY(5px);
+}
+.hidden{
+    display: none;
+}
+.hidden2{
+    display: none;
+}
+.visible{
+    display: block;
+}
+i{
+    padding: 10px;
+    border: 2px solid;
+    margin-right: 5px;
+    border-radius: 50px;
+}
+.enemyHP{
+    display: grid;
+    grid-template-areas: 
+    'EHP1 EHP2 EHP3 EHP4 EHP5 EHP6 EHP7 EHP8 EHP9 EHP10 EHP11';
+    justify-content:left;
+}
+.enemyHP1, .enemyHP2, .enemyHP3, .enemyHP4, .enemyHP5, .enemyHP6, .enemyHP7, .enemyHP8, .enemyHP9, .enemyHP10, .enemyHP11{
+    height: 25px;
+    width: 50px;
+}
+.enemyHP1{
+    grid-area: EHP1;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+}
+.enemyHP2{
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: EHP2;
+}
+.enemyHP3{
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: EHP3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.enemyHP4{
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: EHP4;
+}
+.enemyHP5{
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    background-color: #43c43c;
+    grid-area: EHP5;
+}
+.enemyHP6{
+    grid-area: EHP6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+}
+.enemyHP7{
+    grid-area: EHP7;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+}
+.enemyHP8{
+    grid-area: EHP8;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+}
+.enemyHP9{
+    grid-area: EHP9;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+}
+.enemyHP10{
+    grid-area: EHP10;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+}
+.enemyHP11{
+    grid-area: EHP11;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+}
+.playerHP{
+    display: grid;
+    grid-template-areas: 
+    'PHP1 PHP2 PHP3 PHP4 PHP5 PHP6 PHP7 PHP8 PHP9 PHP10 PHP11';
+    justify-content: left;
+}
+.playerHP1, .playerHP2, .playerHP3, .playerHP4, .playerHP5, .playerHP6, .playerHP7, .playerHP8, .playerHP9, .playerHP10, .playerHP11{
+    width: 50px;
+    height: 25px;
+}
+.playerHP1{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP1;
+}
+.playerHP2{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP2;
+}
+.playerHP3{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP3;
+}
+.playerHP4{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP4;
+}
+.playerHP5{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP5;
+}
+.playerHP6{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43c43c;
+    grid-area: PHP6;
+}
+.playerHP7{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP7;
+}
+.playerHP8{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP8;
+}
+.playerHP9{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP9;
+}
+.playerHP10{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP10;
+}
+.playerHP11{
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    background-color: #43c43c;
+    grid-area: PHP11;
+}
+.quizButton{
+    background-color: darkred;
+    border-radius: 5px;
+    color: white;
+    transition: ease-in-out 250ms;
+}
+.quizButton:hover{
+    background-color: lightcoral;
+    transform: translateY(5px);
+}
+.quiz1Button1, .quiz1Button2, .quiz2Button1, .quiz3Button1, .quiz4Button1, .quiz5Button1 ,.quiz6Button1, .quiz7Button1, .quiz8Button1, .quiz9Button1
+,.quiz10Button1, .quiz11Button1{
+    margin-bottom: 15px;
+}
+.quiz7I:hover{
+    color: white;
+    background-color: black;
+    transition: 250ms ease-in-out;
+    cursor: pointer;
+}
+.winningEndScreen, .losingEndScreen{
+    margin-top: 250px;
+    border: 2px solid;
+    text-align: center;
+    background-color: lightgray;
+    color: black;
+    font-size: 25px;
+}
+.nextGame{
+    padding: 10px;
+    border-radius: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: #BDECB6;
+    transition: ease-in-out 250ms;
+}
+.nextGame:hover{
+    padding: 20px;
+}
+.restart{
+    padding: 10px;
+    border-radius: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: #3B83BD;
+    color: white;
+    margin-bottom: 15px;
+    transition: ease-in-out 250ms;
+}
+.restart:hover{
+    padding: 20px;
+}
+.removeHealth{
+    animation: removeHP 2s ease-in-out;
+    background-color: #a52422;
+}
+@keyframes removeHP {
+    0%{
+        background-color: #43c43c;
+    }
+    50%{
+        background-color: #a52422;
+        transition: ease-in-out 150ms;
+    }
+    100%{
+        background-color: #a52422;
+        transition: 150ms ease-in-out;
+    }
+}

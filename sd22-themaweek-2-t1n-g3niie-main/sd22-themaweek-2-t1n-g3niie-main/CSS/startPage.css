@@ -1,0 +1,81 @@
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
+body{
+    background-color: #CCF4D4;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+}
+.wrapper{
+    background-color: cornflowerblue;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    border: 2px solid cornflowerblue;
+    height: 430px;
+    width: 1250px;
+    margin-left: 125px;
+    margin-top: 150px;
+}
+.buttonSection{
+    height: 70px;
+}
+.fullName, .nextButton, .nextButton2, .nextButton3, .nextButton4{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 50px;
+    height: 50px;
+    background-color: #F0092B;
+    color: black;
+    transition: ease-in-out 250ms;
+}
+.fullName:hover, .nextButton:hover, .nextButton2:hover, .nextButton3:hover, .nextButton4:hover{
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+} 
+.startMenuButton{
+    font-family: 'Josefin Sans', sans-serif;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    font-size: 25px;
+    top: 50%;
+    left: 43%;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+}
+.startMenuButton:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+    animation: changeColor 4s ease-in-out infinite;
+    transition: ease-in-out 250ms;
+}
+a:hover{
+    border-radius: 10px;
+    background-color: black;
+}
+@keyframes changeColor {
+    0%{
+        color: white;
+    }
+    25%{
+        color: #aa00dd;
+    }
+    50%{
+        color: #4df91d;
+    }
+    100%{
+        color: white;
+    }
+}

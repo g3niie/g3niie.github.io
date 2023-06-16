@@ -1,0 +1,229 @@
+body{
+    font-family: 'Alata', sans-serif;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px;
+}
+
+.pMain{
+    color: white;
+    grid-area: 1/3;
+}
+.spanMain{
+    color: white;
+    grid-area: 1/3;
+}
+.inputPassword{
+    grid-area: 2/3;
+    width: 180px;
+    height: 25px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-family: 'Alata', sans-serif;
+}
+.guessButton{
+    grid-area: 3/4;
+    width: 180px;
+    height: 25px;
+}
+.restartLevel{
+    grid-area: 2/3;
+    width: 180px;
+    height: 25px;
+}
+.inputText{
+    text-align: center;
+    width: 200px;
+    /* color: white; */
+    height: 200px;
+    grid-area: 3/3;
+}
+.guessButton, .restartLevel{
+    margin-top: 20px;
+}
+.colorBlue{
+    grid-area: 5/3;
+}
+.yellowGreen{
+    grid-area: 5/1;
+}
+.signalViolet{
+    grid-area: 2/5;
+}
+.heatherViolet{
+    grid-area: 1/5;
+}
+.pureOrange{
+    grid-area: 4/5;
+}
+.luminousRed{
+    grid-area: 2/3;
+}
+.trafficBlue{
+    grid-area: 3/1;
+}
+.deepOrange{
+    grid-area: 1/3;
+}
+.pastalGreen{
+    grid-area: 5/4;
+}
+.cream{
+    grid-area: 1/1;
+}
+.startScreen{
+    text-align: center;
+    border: 2px solid black;
+    padding: 50px;
+}
+.startButton, .guessButton, .restartLevel{
+    font-family: 'Alata', sans-serif;
+    margin-top: 25px;
+    background-color: #FF7514;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+}
+.startButton:hover, .guessButton:hover, .restartLevel:hover{
+    transform: translateY(5px);
+}
+.hidden{
+    display: none;
+}
+
+.colors{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 75px;
+}
+.colors:hover{
+    transition: ease-in-out 250ms;
+    background-color: white;
+}
+.winnerEndScreen{
+    margin-top: 250px;
+    background-color: #924E7D;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen1{
+    margin-top: 250px;
+    background-color: #2271b3;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen2{
+    margin-top: 250px;
+    background-color: #57A639;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen3{
+    margin-top: 250px;
+    background-color: #DE4C8A;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen4{
+    margin-top: 250px;
+    background-color: #F44611;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen5{
+    margin-top: 250px;
+    background-color: #F80000;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen6{
+    margin-top: 250px;
+    background-color: #063971;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen7{
+    margin-top: 250px;
+    background-color: #EC7C26;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen8{
+    margin-top: 250px;
+    background-color: #BDECB6;
+    color: white;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.losingEndScreen9{
+    margin-top: 250px;
+    background-color: #FDF4E3;
+    color: black;
+    text-align: center;
+    width: 750px;
+    height: 250px;
+    border: 2px solid;
+}
+.nextButton, .restartButton, .homeButton{
+    background-color: black;
+    color: white;
+    height: 35px;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+    font-family: 'Alata', sans-serif;
+}
+.nextButton:hover, .restartButton:hover, .homeButton:hover{
+    background-color: white;
+    color:black;
+    transform: translateY(5px);
+}
+.restartButton1, .restartButton2, .restartButton3, .restartButton4, .restartButton5, .restartButton6, .restartButton7, .restartButton9{
+    background-color: black;
+    color: white;
+    height: 35px;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+    font-family: 'Alata', sans-serif;
+}
+.restartButton1:hover, .restartButton2:hover, .restartButton3:hover, .restartButton4:hover:hover, .restartButton6:hover, .restartButton7:hover, .restartButton9:hover{
+    background-color: white;
+    color:black;
+    transform: translateY(5px);
+}

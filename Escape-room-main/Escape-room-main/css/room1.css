@@ -1,0 +1,157 @@
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#background{
+  background-image: url("/css/hospital_room.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#backButton{
+  background-image: url("/css/arrow_left.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 80%;
+  background-color: grey;
+  border-radius: 50%;
+  border: 3px solid grey;
+  width: 7%;
+  height: 12%;
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translate(0%,-50%);
+}
+
+#nextButton{
+  background-image: url("/css/arrow_right.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 80%;
+  background-color: grey;
+  border-radius: 50%;
+  border: 3px solid grey;
+  width: 7%;
+  height: 12%;
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translate(0%,-50%);
+  visibility: hidden;
+}
+
+#codeHangman{
+  width: 7%;
+  height: 9%;
+  position: absolute;
+  left: 25%;
+  top: 42.5%;
+  opacity: 0.5;
+  background-color: black;
+}
+#codeHangman:hover{
+  opacity: 1;
+}
+button:hover{
+  cursor: pointer;
+}
+#room1Button{
+  margin-left: 10%;
+  position: absolute;
+  right: 0%;
+  top: 90%;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  font-size: x-large;
+  transform: translate(0% , -50%);
+}
+
+
+#box{
+  /* height: 600px; */
+  height: 70% ;
+  /* width: 350px; */
+  width: 40%;
+  border: 4px solid black;
+  background-color: grey;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+#hangman{
+  width: 70%;
+  height: 50%;
+  margin: 50px;
+  background-color: white;
+}
+
+#characterInput{
+  width: 35%;
+  height: 10%;
+  font-size: 300%;
+  align-content: center;
+  background-color: black;
+  color: white;
+  right: 32.5%;
+  position: absolute;
+  
+}
+  
+#characterBox{
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  color: red;
+  margin-top: 80px;
+  font-size: 36px;
+  white-space: pre-line;
+}
+
+#guessButton{
+  visibility: hidden;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  font-size: x-large;
+  transform: translate(0% , -50%);
+  top: 90%;
+  position: absolute;
+}
+
+#start-Button{
+  -background-color: black;
+  color: white;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  font-size: x-large;
+  transform: translate(0% , -50%);
+  top: 90%;
+  position: absolute;
+}
+p{
+  font-family: sans-serif;
+}

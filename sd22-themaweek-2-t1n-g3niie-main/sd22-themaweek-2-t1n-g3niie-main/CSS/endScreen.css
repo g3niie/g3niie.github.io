@@ -1,0 +1,72 @@
+body{
+    background-color: gray;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.hidden{
+    display: none;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.endScreen{
+    grid-area: startsc;
+    text-align: center;
+    color: white;
+    border: 2px solid;
+    width: 950px;
+    font-size: 35px;
+    height: 500px;
+    margin-top: 250px;
+}
+.homePage{
+    font-family: 'Montserrat Alternates', sans-serif;
+    height: 50px;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+}
+.homePage:hover{
+    background-color: #BDECB6;
+    transform: translateY(5px);
+    cursor: pointer;
+}
+p{
+    color: #B32821;
+    animation: rainbow 10s ease-in-out infinite;
+}
+@keyframes rainbow {
+    0%{
+        color: #B32821;
+    }
+    10%{
+        color: #FFA420;
+    }
+    20%{
+        color: #FFFF00;
+    }
+    30%{
+        color: #00BB2D;
+    }
+    40%{
+        color: #2271B3;
+    }
+    50%{
+        color: #6C4675;
+    }
+    60%{
+        color: #2271B3;
+    }
+    70%{
+        color: #00BB2D;
+    }
+    80%{
+        color: #FFFF00;
+    }
+    90%{
+        color: #FFA420;
+    }
+    100%{
+        color: #B32821;
+    }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+    <title>Math puzzle</title>
+    <link rel="stylesheet" href="/CSS/math.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="startGame">
+            <button class="enterStartScreen">Click here to enter puzzle!</button>
+        </div>
+
+        <div class="startScreen hidden">
+            <h1>Welcome to the first Puzzle for the math core!</h1>
+            <p class="text1">In this puzzle you are going up agains the math boss</p>
+            <p class="text2">Everytime you get a answer right, you do damage to the boss until he has 0 HP</p>
+            <p class="text3">But everytime you get a answer wrong, you get damaged until you are at 0 HP</p>
+            <button class="startButton">Let's begin!</button>
+        </div>
+
+        <div class="mathContainer ">
+            <div class="math1">
+                <p class="question1">Question 1 ) 1 + 1 = </p>
+                <p class="question1Answer"><span class="question1Span"></span></p>
+                <input type="number" class="question1Input"> <br><br><br>
+                <button class="question1Button">Click here to answer</button>
+            </div>
+
+            <br><br>
+
+            <div class="math2 hidden">
+                <p class="question2">
+                    Solve the equation : 12a + 26b - 4b - 16a <br>
+                    pick one of these answers and type it in the input <br>
+                    a) 4a + 22b <br>
+                    b) -28a + 30b <br>
+                    c) -4a + 22b<br>
+                    d) 28a + 30b
+                </p>
+                <p class="question2Answer"><span class="question2Span"></span></p>
+                <input type="text" class="question2Input"> <br><br><br>
+                <button class="question2Button">Click here to answer</button>
+            </div>
+
+            <br><br>
+
+            <div class="math3 hidden">
+                <p class="question3">
+                    Solve the equation: (x – 4)(x + 5) <br>
+                    pick one of these answers and type it in the input <br>
+                    (a) x2 + 5x - 20 <br>
+                    (b) x2 - 4x - 20 <br>
+                    (c) x2 - x - 20 <br>
+                    (d) x2 + x - 20 
+                </p>
+                <p class="question3Answer"><span class="question3Span"></span></p>
+                <input type="text" class="question3Input"> <br><br><br>
+                <button class="question3Button">Click here to answer</button>
+            </div>
+
+            <div class="math4 hidden">
+                <p class="question4">
+                    If the math equations are : <br> 2=6, 3=12, 4=20, 5=30, 6=42. <br>
+                    What is 9=? then?<br>
+                    a)90 <br>
+                    b)199 <br>
+                    c)84 <br>
+                    d)99 <br>
+                </p>
+                <p class="question4Answer"><span class="question4Span"></span></p>
+                <input type="text" class="question4Input"> <br><br><br>
+                <button class="question4Button">Click here to answer</button>
+            </div>
+
+            <div class="math5 hidden">
+                <p class="question5">
+                    If the equations are : 3,2,4 = 10 / 4,3,5 = 17 / 5,4,6 = 36 / 6,5,7 = 37 <br>
+                    What is 7,6,8 then?<br>
+                </p>
+                <p class="question5Answer"><span class="question5Span"></span></p>
+                <input type="number" class="question5Input"> <br><br><br>
+                <button class="question5Button">Click here to answer</button>
+            </div>
+
+            <h2 class="enemyHPH2">ENEMY HP</h2>
+            <div class="enemyHP ">
+                <div class="enemyHP1"></div>
+                <div class="enemyHP2"></div>
+                <div class="enemyHP3"> <p>HP: </p><span class="enemyHP3Span">100</span></div>
+                <div class="enemyHP4"></div>
+                <div class="enemyHP5"></div>
+            </div>
+            
+            <h2 class="playerHPH2">PLAYER HP</h2>
+            <div class="playerHP">
+                <div class="playerHP1"></div>
+                <div class="playerHP2"></div>
+                <div class="playerHP3"> HP: <span class="playerHP3Span">100</span></div>
+                <div class="playerHP4"></div>
+                <div class="playerHP5"></div>
+            </div>
+        </div>
+        <div class="winningEndScreen hidden2">
+            <p>You won! GGS! Now that you  have defeated the Math Boss. <br>
+            You can now go to the next boss! Good luck soldier!
+            </p>
+            <br><br>
+            <button class="nextButton">Click here to go to next round</button>
+            </div>
+        <div class="losingEndScreen hidden2">
+            <p>Dang bro, you lost. Sucks to suck. But not to worry! <br>
+            You have more chances to win against the boss!
+            </p>
+            <button class="refreshButton">Click here to try again</button>
+        </div>
+    </div>
+    <script src="/JS/math.js"></script>
+</body>
+</html>

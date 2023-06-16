@@ -1,0 +1,281 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: lightblue;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+button{
+    font-family: 'Josefin Sans', sans-serif;
+}
+.startScreen{
+    border: 2px solid;
+    border: 2px solid;
+    text-align: center;
+    padding: 20px;
+}
+.startButton{
+    margin-top: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    transition: 250ms ease-in-out;
+}
+.startButton:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(5px);
+}
+.hidden2{
+    opacity: 0;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.enterStartScreen{
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #4d4999;
+    color: white;
+    transition: 250ms ease-in-out;
+}
+.enterStartScreen:hover{
+    cursor: pointer;
+    background-color: #315cf7;
+    transform: translateY(5px);
+}
+
+.mathContainer{
+    display: grid;
+    grid-template-columns: 260px 260px 260px  ;
+    grid-template-rows: 240px 240px 240px;
+    gap: 25px;
+}
+.math1{
+    text-align: center;
+    grid-area: 1/1/2/2;
+}
+.math2{
+    text-align: center;
+    grid-area: 1/2/2/3;
+}
+.math3{
+    text-align: center;
+    grid-area: 1/3/2/4;
+}
+.math4{
+    grid-area: 2/1/2/3;
+}
+.math5{
+    text-align: center;
+    grid-area: 2/2;
+}
+.enemyHP{
+    grid-area: 1/4;
+    display: grid;
+    grid-template-areas: 
+    'HP1 HP2 HP3 HP4 HP5';
+    justify-content: center;
+    align-content: center;
+}
+.enemyHP1{
+    margin-left: 0px;
+    grid-area: HP1;
+    border-left: 3px solid;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.enemyHP2{
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    grid-area: HP2;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.enemyHP3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: HP3;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.enemyHP4{
+    grid-area: HP4;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.enemyHP5{
+    grid-area: HP5;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-right: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.playerHP{
+    grid-area: 3/4;
+    display: grid;
+    grid-template-areas: 
+    'PHP1 PHP2 PHP3 PHP4 PHP5';
+    justify-content: center;
+    align-content: center;
+}
+.playerHP1{
+    grid-area: PHP1;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-left: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.playerHP2{
+    grid-area: PHP2;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.playerHP3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: PHP3;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.playerHP4{
+    grid-area: PHP4;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.playerHP5{
+    grid-area: PHP5;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-right: 3px solid;
+    background-color: #43c43c;
+    width: 50px;
+    height: 50px;
+}
+.playerHPH2{
+    grid-area: 3/4;
+    text-align: center;
+}
+.enemyHPH2{
+    grid-area: 1/4;
+    text-align: center;
+}
+
+.question1Button, .question2Button, .question3Button, .question4Button, .question5Button{
+    border-radius: 50px;
+    padding: 10px;
+    transition: 250ms ease-in-out;
+}
+.question1Button:hover, .question2Button:hover, .question3Button:hover, .question4Button:hover, .question5Button:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(5px);
+}
+input{
+    font-size: 15px;
+}
+.winningEndScreen{
+    border: 2px solid;
+    text-align: center;
+    padding: 30px;
+    width: 500px;
+    margin-left: 650px;
+    margin-bottom: 0px;
+}
+.losingEndScreen{
+    border: 2px solid;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 500px;
+    margin-left: 650px;
+}
+.nextGame{
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+    height: 30px;
+}
+.refreshButton{
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+}
+.refreshButton:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: translateY(5px);
+}
+.nextButton{
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 50px;
+    transition: ease-in-out 250ms;
+}
+.nextButton:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: translateY(5px);
+}
+.nextGame:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transform: translateY(5px);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid;
+}
+.removeHealth{
+    animation: removeHP 2s ease-in-out;
+    background-color: #a52422;
+}
+@keyframes removeHP {
+    0%{
+        background-color: #43c43c;
+    }
+    50%{
+        background-color: #a52422;
+        transition: ease-in-out 150ms;
+    }
+    100%{
+        background-color: #a52422;
+        transition: 150ms ease-in-out;
+    }
+}
+
+

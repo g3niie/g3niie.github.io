@@ -27,7 +27,7 @@ button:hover{
 .hidden{
     display: none;
 }
-.higher-lower, .tic-tac-toe, .dashboard{
+.higher-lower, .tic-tac-toe, .dashboard, .webcatalogus, .themaweek-2, .themaweek-1{
     padding: 50px;
     background-color: black;
     border: 5px solid white;
@@ -48,6 +48,6 @@ a:hover{
     font-size: 30px;
     text-decoration: underline;
 }
-.tictactoe, .dashboard-img{
+.tictactoe, .dashboard-img, .webcatalogus-img, .themaweek-2-img, .themaweek-1-img{
     width: 532px;
 }

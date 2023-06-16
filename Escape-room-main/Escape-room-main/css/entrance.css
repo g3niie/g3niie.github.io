@@ -1,0 +1,119 @@
+
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+#background{
+  background-image: url("/Escape-room-main/Escape-room-main/css/entrance_door.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.entranceDoor{
+    background-color: antiquewhite;
+}
+#codeDoor{
+    height: auto;
+    width: 195px;
+    font-size: 72px;
+    color: #cc0000;
+    margin-left: 50%;
+    transform: translate(-50%);
+    background-color: #ff0000;
+    margin-top: 30px;
+    border: 8px solid black;
+    
+}
+#box{
+    height: 600px;
+    width: 350px;
+    border: 4px solid black;
+    background-color: #eab676;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+.entranceDoor{
+    width: 200px;
+
+}
+#buttonEntrance1{
+    height: 82px;
+    width: 75px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-image: url("/Escape-room-main/Escape-room-main/css/paper.png");
+    background-size: 82px, 75px;
+    
+}
+#buttonEntrance2{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid grey;
+    cursor: pointer;
+    margin-top: 20.5%;
+    margin-left: 3px;
+    width: 75px;
+    height: 75px;
+    font-size: large;
+}
+#buttonEntrance3{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    border: 3px solid grey;
+    cursor: pointer;
+    margin-top: -75px;
+    width: 75px;
+    height: 75px;
+    font-size: large;
+    float: right;
+
+}
+#buttonEntrance4{
+    width: 450px;
+    height: 455px;
+    background-color: transparent;
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0;
+    visibility: hidden;
+}
+button:hover{
+    cursor: pointer;
+}
+
+p{
+    font-family: sans-serif;
+    margin: 0%;
+}
+
+h2{
+    margin: 0%;
+}
+.homepage{
+    text-decoration: none;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    transition: ease-in-out 250ms;
+}
+.homepage:hover{
+    margin-left: 15px;
+    text-decoration: underline;
+}
