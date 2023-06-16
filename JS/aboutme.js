@@ -1,5 +1,6 @@
 console.log('File loaded');
 
+//alle Elementen opgenomen van HTML bestand
 const lightSwitch = document.querySelector('div.light-switch');
 const wrapper = document.querySelector('div.wrapper');
 const h1 = document.querySelector('h1');
@@ -11,9 +12,12 @@ const button1 = document.querySelector('button.switch-case-button1');
 const button2 = document.querySelector('button.switch-case-button2');
 const homepage = document.querySelector('button.homepage');
 
+//alle addEventListeners
 lightSwitch.addEventListener('click', mainPage);
 button1.addEventListener('click', nextPage);
 homepage.addEventListener('click', goHome);
+
+//Alle Functions in deze HTML bestand
 function mainPage(){
     lightSwitch.classList.toggle('margin');
     button1.classList.remove('hidden');
