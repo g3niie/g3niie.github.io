@@ -1,27 +1,98 @@
-
-h1{
+h1 {
     font-family: 'Righteous', cursive;
 }
-.change-buttons{
+
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.change-buttons {
     border-radius: 25px;
     margin: 5px;
     padding: 10px;
     border: none;
     transition: ease-in-out 250ms;
-    font-family: 'Quicksand', sans-serif;
 }
-.change-buttons:hover{
+
+.change-buttons:hover {
     transform: translateY(5px);
 }
-.button1{
+
+.button1 {
     background-color: black;
     color: white;
 }
-.button2{
+
+.button2 {
     background-color: blue;
     color: white;
 }
-.button3{
+
+.button3 {
     background-color: red;
     color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.img {
+    width: 250px;
+    border-radius: 25px;
+}
+
+.wrapper {
+    padding: 20px;
+    width: 290px;
+    height: 370px;
+    background-color: gray;
+    border-radius: 25px;
+    transition: ease-in-out 250ms;
+}
+
+.wrapper:hover {
+    transform: translateY(15px);
+    cursor: pointer;
+}
+
+.writing-col {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 25px;
+    animation: change 2s infinite ease;
+    text-align: center;
+}
+
+.links {
+    background-color: black;
+    font-size: 18px;
+    color: white;
+    border-radius: 25px;
+    padding-top: 10px;
+}
+
+a {
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    transition: ease-in-out 250ms;
+    font-size: 20px;
+}
+
+a:hover {
+    margin-left: 10px;
+    text-decoration: underline;
+}
+
+@keyframes change {
+    50% {
+        transform: translateY(7px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
