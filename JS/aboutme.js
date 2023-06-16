@@ -18,7 +18,7 @@ button1.addEventListener('click', nextPage);
 homepage.addEventListener('click', goHome);
 
 //Alle Functions in deze HTML bestand
-function mainPage(){
+function mainPage() {
     lightSwitch.classList.toggle('margin');
     button1.classList.remove('hidden');
     wrapper.style.backgroundColor = 'white';
@@ -28,9 +28,9 @@ function mainPage(){
     homepage.style.backgroundColor = 'white';
     homepage.style.color = 'black';
 }
-function nextPage(){
+function nextPage() {
     switchCaseContainer2.classList.toggle('hidden');
 }
-function goHome(){
+function goHome() {
     location.href = 'index.html'
 }
