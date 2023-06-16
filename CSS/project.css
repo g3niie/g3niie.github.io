@@ -1,0 +1,53 @@
+body{
+    background-color: gray;
+}
+h1{
+    font-family: 'Righteous', cursive;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+}
+.button-case{
+    border: 5px solid black;
+    padding: 20px;
+}  
+button{
+    border-radius: 25px;
+    font-family: 'Righteous', sans-serif;
+    padding: 10px;
+    font-size: 20px;
+    transition: ease-in-out 250ms;
+}
+button:hover{
+    transform: translateY(5px);
+    background-color: black;
+    color: white;
+}
+.hidden{
+    display: none;
+}
+.higher-lower, .tic-tac-toe, .dashboard{
+    padding: 50px;
+    background-color: black;
+    border: 5px solid white;
+    border-radius: 25px;
+    color: white;
+}
+img{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    transition: ease-in-out 250ms;
+}
+a:hover{
+    font-size: 30px;
+    text-decoration: underline;
+}
+.tictactoe, .dashboard-img{
+    width: 532px;
+}
