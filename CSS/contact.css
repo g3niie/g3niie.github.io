@@ -1,0 +1,63 @@
+body{
+    background-color: black;
+    color: white;
+}
+h1, h4{
+    font-family: 'Righteous', cursive;
+}
+p {
+    font-family: 'Quicksand', sans-serif;
+}
+.discord{
+    border: 2px solid white;
+    height: 250px;
+    background-color: #5865F2;
+    transition: ease-in-out 250ms;
+}
+.github{
+    border: 2px solid white;
+    height: 250px;
+    background-color: white;
+    transition: ease-in-out 250ms;
+}
+.email{
+    border: 2px solid;
+    height: 250px;
+    background-color: red;
+    transition: ease-in-out 250ms;
+}
+.linked-in{
+    border: 2px solid white;
+    height: 250px;
+    background-color: white;
+    transition: ease-in-out 250ms;
+}
+img{
+    width: 175px;
+}
+.discord:hover, .github:hover, .email:hover, .linked-in:hover{
+    transform: translateY(15px);
+    cursor: pointer;
+}
+
+.h4-github{
+    color: black;
+}
+.h4-email{
+    padding-top: 45px;
+}
+.h4-linked-in{
+    color: black;
+    padding-top: 110px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: ease-in-out 250ms;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+a:hover{
+    text-decoration: underline;
+    margin-left: 15px;
+}
