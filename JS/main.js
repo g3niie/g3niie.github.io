@@ -4,6 +4,7 @@ console.log('File loaded');
 const button1 = document.querySelector('button.button1');
 const button2 = document.querySelector('button.button2');
 const button3 = document.querySelector('button.button3');
+const secretButton = document.querySelector('button.button-secret');
 const h1 = document.querySelector('h1');
 const writingCol = document.querySelector('div.writing-col');
 const links = document.querySelector('div.links');
@@ -25,6 +26,7 @@ function changeBg1() {
     button1.classList.add('hidden');
     button2.classList.add('hidden');
     button3.classList.add('hidden');
+    secretButton.classList.remove('hidden');
 }
 
 function changeBg2() {
