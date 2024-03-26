@@ -159,25 +159,32 @@
     <div class="container eight-container">
         <h3 class="text-warning">DEZE CODE IS OM FORM TE MAKEN EN NIEUWE INFORMATIE IN DATABASE ZETTEN IN HET FORM
             BESTAND</h3>
-        <p>Om form te maken je in terminal dit typen: <span style="color: yellow;">symfony console make:form</span></p>
+            <hr>
+        <p>Om form te maken je in terminal dit typen: <br><span style="color: yellow;">symfony console make:form</span></p>
+        <hr>
         <p class="text-danger">LET OP: JE FORM NAAM MET MOET HOOFDLETTER BEGINNEN EN TYPE MOET OOK MET HOOFDLETTER
             BEGINNEN (KIJK ONDER DEZE ZIN OM TE KIJKEN HOE HET MOET)</p>
         <p style="color: yellow;">ExampleType</p>
+        <hr>
         <p>Daarna moet je jou form met een specifiek database linken (kijk foto hieronder om te weten welke lijn dit
             vraagt)</p>
         <img src="dota/dota16.png" alt="">
         <p>Wanneer je dit heb gedaan krijg je een bestand die "Form" heet in jou "src" map. Nu ga je daarin coderen</p>
+        <hr>
         <h3 class="text-warning">VOORDAT JE GAAT CODEREN, TYPE DIT HELEMAAL BOVEN BIJ "use"</h3>
         <img src="dota/dota19.png" alt="">
         <img src="dota/dota21.png" alt="">
-        <p>Cope en Paste code is beneden deze zin</p>
+        <hr>
+        <p>Copy en Paste code is beneden deze zin</p>
         <p style="color: yellow;">
             use symfony\Component\Form\Extension\Core\Type\TextType; <br>
             use symfony\Component\Form\Extension\Core\Type\SubmitType; <br>
         </p>
+        <hr>
         <h3 class="text-danger">VOORDAT JE DOORGAAT MAAK JOU FORMS CONTROLLER </h3>
         <p class="text-danger">CODE OM TE KOPIEEREN IS ONDER DEZE ZIN</p>
         <p style="color: yellow;">symfony console make:controller FormsController</p>
+        <hr>
         <h3 class="text-warning">DIT IS HOE HET CODE UITZIET VOOR FORM BESTAND</h3>
         <img src="dota/dota17.png" alt="" srcset="">
         <p>Beneden deze text is hoe je database moet linken met deze forms bestand</p>
@@ -190,24 +197,32 @@
             #2- 'TextType:class' <span class="text-danger">MOET</span> hier zijn <br>
             #3- ['label' => 'Season'] is welke naam je het geeft voor forms
         </p>
+        <hr>
         <h5 class="text-warning">NU BEN JE KLAAR MET FORM BESTAND CODEREN</h5>
     </div>
     <br><br>
     <div class="container ninth-container">
         <h3 class="text-warning">DEZE CODE WORDT NU GEDAAN IN CONTROLLER VOOR FORMS</h3>
+        <hr>
         <h3 class="text-danger">DEZE CODE WORDT GEDAAN IN FORMSCONTROLLER</h3>
+        <hr>
         <p>Beneden deze zin is hoe het hele route moet zien om forms te laten zien</p>
         <img src="dota/dota23.png" alt="" srcset="">
+        <hr>
         <p>Beneden deze zin is alles dat je moet veranderen om forms route</p>
         <img src="dota/dota24.png" alt=""> <br>
         <img src="dota/dota25.png" alt=""> <br>
         <p class="text-danger">LET OP JE TYPE JE NAAM VOOR JE FORMS in "EpisodeType::class", NIET DATABASE.</p>
+        <hr>
         <img src="dota/dota26.png" alt=""> <br>
         <p>redirectToRoute is gewoon homepage van je website</p>
+        <hr>
         <img src="dota/dota27.png" alt="">
         <p class="text-danger">BIJ DEZE CODE ('form' => $form) HIERBOVEN GA JE DIT TYPEN IN JOU FORMS TWIG BESTAND</p>
+        <hr>
         <p class="text-warning">KIJK FOTO BENEDEN OM TE KIJKEN WAT JE MOET TYPEN IN JOU FORM TWIG BESTAND</p>
         <img src="dota/dota28.png" alt="">
+        <hr>
         <p>Om het alert te krijgen dat je een nieuwe serie heb toegevoeg moet je terug naar homepage bestand en deze
             code typen helemaal boven</p>
         <img src="dota/dota29.png" alt="">
