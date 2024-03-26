@@ -1,154 +1,225 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="/CSS/dota.css">
-    </head>
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <br>
-                    <button class="stap-1">DOTA-1</button>
-                </div>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/CSS/dota.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <br>
+                <button class="stap-1">DOTA-1</button>
             </div>
         </div>
-        <div class="container first-container ">
-            <p>1. Eerste stap dat je moet doen is deze command in jou terminal in php storm/ VS code typen. (copieer wat in geel is getyped)</p>
-            <p style="color: yellow;">composer require symfony/asset-mapper symfony/asset symfony/twig-pack</p>
-            <p>Dit gaat wel lang duren dus geef het tijd.</p>
-            <br>
-            <div class="row">
-                <div class="col">
-                    <img src="/IMG/DOTA.png">
-                </div>
+    </div>
+    <div class="container first-container ">
+        <p>1. Eerste stap dat je moet doen is deze command in jou terminal in php storm/ VS code typen. (copieer wat in
+            geel is getyped)</p>
+        <p style="color: yellow;">composer require symfony/asset-mapper symfony/asset symfony/twig-pack</p>
+        <p>Dit gaat wel lang duren dus geef het tijd.</p>
+        <br>
+        <div class="row">
+            <div class="col">
+                <img src="/IMG/DOTA.png">
             </div>
         </div>
-        <div class="container second-container ">
-            <div class="row">
-                <div class="col">
-                    2.1 Eerst moet je ".env" map helemaal kopieeren <br>
-                    2.2 Tweede moet je een nieuwe bestand maken die ".env.local" heet <br>
-                    2.3 Derde moet je" .env" pasten in het ".env.local" map <br>
-                    2.4 Vierde met precies regel 28 in ".env.local" map kopieeren en plakken onder regel 28 en "#" verwijderen <p style="color: yellow;"> (kijk foto voor voorbeeld)</p>
-                    <img src="/dota/dota2.png" alt=""> <br>
-                    2.5 Je moet van regel 29 "series" veranderen naar jou eigen database naam <br>
-                    2.6 Bij regel 29 moet je alleen "MariaDB" hebben bij einde van alinea 
-                </div>
+    </div>
+    <br><br>
+    <div class="container second-container ">
+        <div class="row">
+            <div class="col">
+                2.1 Eerst moet je ".env" map helemaal kopieeren <br>
+                2.2 Tweede moet je een nieuwe bestand maken die ".env.local" heet <br>
+                2.3 Derde moet je" .env" pasten in het ".env.local" map <br>
+                2.4 Vierde met precies regel 28 in ".env.local" map kopieeren en plakken onder regel 28 en "#"
+                verwijderen <p style="color: yellow;"> (kijk foto voor voorbeeld)</p>
+                <img src="/dota/dota2.png" alt=""> <br>
+                2.5 Je moet van regel 29 "series" veranderen naar jou eigen database naam <br>
+                2.6 Bij regel 29 moet je alleen "MariaDB" hebben bij einde van alinea
             </div>
         </div>
-        <div class="container third-container">
-            <div class="row">
-                <div class="col">
-                    <p>3. Derde moet in het backup file kijken toets om het database te importeren (het staan in /backups en heet series.sql)</p>
-                    <img src="/dota/dota3.png">
-                    <img src="/dota/dota4.png">
-                    </p>
-                </div>
+    </div>
+    <br><br>
+    <div class="container third-container">
+        <div class="row">
+            <div class="col">
+                <p>3. Derde moet in het backup file kijken toets om het database te importeren (het staan in /backups en
+                    heet series.sql)</p>
+                <img src="/dota/dota3.png">
+                <img src="/dota/dota4.png">
+                </p>
             </div>
         </div>
-        <div class="container fourth-container">
-            <div class="row">
-                <div class="col">
-                    <p>4. Je moet Deze relaties met terminal doen zonder fouten <p style="color: yellow;">(Kijk Foto voor relaties)</p></p>
-                    <img src="dota/dota5.png">
-                    <p>Je moet in terminal dit typen: <span style="color: yellow;">symfony console make:entity</span></p>
-                    <p>En dan moet je entity maken met juiste relaties</p>
-                    <hr>
-                    <p class="text-danger">TYPE ENTITY'S MET HOOFDLETTER (Genre) EN PROPERPY ZONDER HOOFDLETTER (genre)</p>
-                    <p>Voorbeel van foto is:</p>
-                    <p class="text-success">Series heeft een relatie met Genre en property heet genre_id</p>
-                    <p class="text-danger">LET OP: BIJ MAKEN VAN RELATIES TYPE JE ALLEEN MAAR "genre", SYMFONY DOET WEL _ID VOOR JOU</p>
-                    <p class="text-success">Episode heeft een relatie met Serie en property heet serie_id</p>
-                    <hr>
-                    <p>5. Wanneer je klaar ben entity maken dit moet je alles migraten</p>
-                </div>
-            </div>
-        </div>
-        <div class="container fifth-container">
-            <p>6. Je moet twee controllers aanmaken voor deze toets in terminal <span style="color: yellow;">(Copy groene text in terminal)</span></p>
-            <p class="text-success">Symfony console make:controller ExampleController</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h4 class="text-warning">HIER BEGINT CODE</h4>
-                </div>
-            </div>
-        </div>
-        <div class="container sixth-container">
-            <h3 class="text-warning">DIT ALLES IS IN CONTROLLER BESTAND</h3>
-            <h3 class="text-warning">DIT ALLES IS OM HET INFORMATIE VAN DATABASE OP TE NEMEN</h3>
-            <img src="dota/dota6.png" alt=""> <br>
-            <hr>
-            <p>Dit is de code die je al hebt gekregen, dus kopieer en plak deze, maar verander gewoon deze volgende namen:<br></p>
+    </div>
+    <br><br>
+    <div class="container fourth-container">
+        <div class="row">
+            <div class="col">
+                <p>4. Je moet Deze relaties met terminal doen zonder fouten
+                <p style="color: yellow;">(Kijk Foto voor relaties)</p>
+                </p>
+                <img src="dota/dota5.png">
+                <p>Je moet in terminal dit typen: <span style="color: yellow;">symfony console make:entity</span></p>
+                <p>En dan moet je entity maken met juiste relaties</p>
                 <hr>
-            <img src="dota/dota7.png" alt=""><br>
-            <p>"/genres moet je veranderen. "app_genre_show" moet je veranderen</p>
-            <hr>
-            <img src="dota/dota8.png" alt=""><br>
-            <p>"genres" moet je veranderen</p>
-            <hr>
-            <img src="dota/dota9.png" alt=""><br>
-            <p>"$genres" moet je veranderen. "Genre::class" moet je veranderen</p> 
-            <p class="text-danger">NIET VERGETEN: HOVER OP "Genre::class" EN DAN MOET JE OP "import class" DRUKKEN OM VAN DATABASE OP TE NEMEN</p>
-            <hr>
-            <img src="dota/dota10.png" alt=""><br>
-            <p>'series/show.html.twig' moet je veranderen naar jou eigen controller. <br> "genres" en "$genres" moet je veranderen</p>
-            <br><br>
-            <hr>
-        </div>
-        <div class="container seventh-container">
-            <h3 class="text-warning">DIT ALLES IS IN TWIG BESTAND</h3>
-            <h3 class="text-warning">DEZE CODE IS ALLEEN OM ALLE DATABASE INFORMATIE TE TONEN</h3>
-            <img src="dota/dota11.png" alt="">
-            <hr>
-            <p>Dit is de code die je al hebt gekregen, dus kopieer en plak deze, maar verander gewoon deze volgende namen:<br></p>
+                <p class="text-danger">TYPE ENTITY'S MET HOOFDLETTER (Genre) EN PROPERPY ZONDER HOOFDLETTER (genre)</p>
                 <hr>
-            <img src="dota/dota12.png" alt=""><br>
-            <p>"genre" en "genres" moet je veranderen</p>
-            <hr>
-            <img src="dota/dota13.png" alt=""><br>
-            <p>"genre" moet je veranderen</p>
-            <hr>
-            <img src="dota/dota14.png" alt=""><br>
-            <p> in "path('app_genre')" moet je <span class="text-warning">"app_genre"</span> veranderen</p>
+                <p>Voorbeel van foto is:</p>
+                <p class="text-success">Series heeft een relatie met Genre en property heet genre_id</p>
+                <hr>
+                <p class="text-danger">LET OP: BIJ MAKEN VAN RELATIES TYPE JE ALLEEN MAAR "genre", SYMFONY DOET WEL _ID
+                    VOOR JOU</p>
+                <hr>
+                <p class="text-success">Episode heeft een relatie met Serie en property heet serie_id</p>
+                <hr>
+                <p>5. Wanneer je klaar ben entity maken dit moet je alles migraten</p>
+            </div>
         </div>
-        <div class="container eight-container">
-            <h3 class="text-warning">DEZE  CODE IS OM FORM TE MAKEN EN NIEUWE INFORMATIE IN DATABASE ZETTEN</h3>
-            <p>Om form te maken je in terminal dit typen: <span style="color: yellow;">symfony console make:form</span></p>
-            <p class="text-danger">LET OP: JE FORM NAAM MET MOET HOOFDLETTER BEGINNEN EN TYPE MOET OOK MET HOOFDLETTER BEGINNEN (KIJK ONDER DEZE ZIN OM TE KIJKEN HOE HET MOET)</p>
-            <p style="color: yellow;">ExampleType</p>
-            <p>Daarna moet je jou form met een specifiek database linken (kijk foto hieronder om te weten welke lijn dit vraagt)</p>
-            <img src="dota/dota16.png" alt="">
-            <p>Wanneer je dit heb gedaan krijg je een bestand die "Form" heet in jou "src" map. Nu ga je daarin coderen</p>
+    </div>
+    <br><br>
+    <div class="container fifth-container">
+        <p>6. Je moet twee controllers aanmaken voor deze toets in terminal <span style="color: yellow;">(Copy groene
+                text in terminal)</span></p>
+        <p class="text-success">Symfony console make:controller ExampleController</p>
+        <hr>
+        <p>Het controllers dat nodig zijn is: <br>
+        <ul>
+            <li>HomepageController</li>
+            <li>SerieController</li>
+            <li>EpisodeController</li>
+            <li>FormsController</li>
+        </ul>
+        </p>
+        <hr>
+        <p class="text-danger">LET OP. FORMS HEEFT OOK EEN CONTROLLER MAAR DAT KOMT STARTS</p>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h4 class="text-warning">HIER BEGINT CODE</h4>
+            </div>
         </div>
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
+    </div>
+    <br><br>
+    <div class="container sixth-container">
+        <h3 class="text-warning">DIT ALLES IS IN CONTROLLER BESTAND</h3>
+        <h3 class="text-warning">DIT ALLES IS OM HET INFORMATIE VAN DATABASE OP TE NEMEN</h3>
+        <img src="dota/dota6.png" alt=""> <br>
+        <hr>
+        <p>Dit is de code die je al hebt gekregen in jou <span class="text-warning">HomepageController</span>, dus kopieer en plak deze, maar verander gewoon deze volgende
+            namen:<br></p>
+        <hr>
+        <img src="dota/dota7.png" alt=""><br>
+        <p>"/genres moet je veranderen. "app_genre_show" moet je veranderen</p>
+        <hr>
+        <img src="dota/dota8.png" alt=""><br>
+        <p>"genres" moet je veranderen</p>
+        <hr>
+        <img src="dota/dota9.png" alt=""><br>
+        <p>"$genres" moet je veranderen. "Genre::class" moet je veranderen</p>
+        <p class="text-danger">NIET VERGETEN: HOVER OP "Genre::class" EN DAN MOET JE OP "import class" DRUKKEN OM VAN
+            DATABASE OP TE NEMEN</p>
+        <hr>
+        <img src="dota/dota10.png" alt=""><br>
+        <p>'series/show.html.twig' moet je veranderen naar jou eigen controller. <br> "genres" en "$genres" moet je
+            veranderen</p>
+        <br><br>
+        <hr>
+    </div>
+    <br><br>
+    <div class="container seventh-container">
+        <h3 class="text-warning">DIT ALLES IS IN TWIG BESTAND</h3>
+        <h3 class="text-warning">DEZE CODE IS ALLEEN OM ALLE DATABASE INFORMATIE TE TONEN</h3>
+        <img src="dota/dota11.png" alt="">
+        <hr>
+        <p>Dit is de code die je al hebt gekregen, dus kopieer en plak deze, maar verander gewoon deze volgende
+            namen:<br></p>
+        <hr>
+        <img src="dota/dota12.png" alt=""><br>
+        <p>"genre" en "genres" moet je veranderen</p>
+        <hr>
+        <img src="dota/dota13.png" alt=""><br>
+        <p>"genre" moet je veranderen</p>
+        <hr>
+        <img src="dota/dota14.png" alt=""><br>
+        <p> in "path('app_genre')" moet je <span class="text-warning">"app_genre"</span> veranderen</p>
+    </div>
+    <br><br>
+    <div class="container eight-container">
+        <h3 class="text-warning">DEZE CODE IS OM FORM TE MAKEN EN NIEUWE INFORMATIE IN DATABASE ZETTEN IN HET FORM
+            BESTAND</h3>
+        <p>Om form te maken je in terminal dit typen: <span style="color: yellow;">symfony console make:form</span></p>
+        <p class="text-danger">LET OP: JE FORM NAAM MET MOET HOOFDLETTER BEGINNEN EN TYPE MOET OOK MET HOOFDLETTER
+            BEGINNEN (KIJK ONDER DEZE ZIN OM TE KIJKEN HOE HET MOET)</p>
+        <p style="color: yellow;">ExampleType</p>
+        <p>Daarna moet je jou form met een specifiek database linken (kijk foto hieronder om te weten welke lijn dit
+            vraagt)</p>
+        <img src="dota/dota16.png" alt="">
+        <p>Wanneer je dit heb gedaan krijg je een bestand die "Form" heet in jou "src" map. Nu ga je daarin coderen</p>
+        <h3 class="text-warning">VOORDAT JE GAAT CODEREN, TYPE DIT HELEMAAL BOVEN BIJ "use"</h3>
+        <img src="dota/dota19.png" alt="">
+        <img src="dota/dota21.png" alt="">
+        <p>Cope en Paste code is beneden deze zin</p>
+        <p style="color: yellow;">
+            use symfony\Component\Form\Extension\Core\Type\TextType; <br>
+            use symfony\Component\Form\Extension\Core\Type\SubmitType; <br>
+        </p>
+        <h3 class="text-danger">VOORDAT JE DOORGAAT MAAK JOU FORMS CONTROLLER </h3>
+        <p class="text-danger">CODE OM TE KOPIEEREN IS ONDER DEZE ZIN</p>
+        <p style="color: yellow;">symfony console make:controller FormsController</p>
+        <h3 class="text-warning">DIT IS HOE HET CODE UITZIET VOOR FORM BESTAND</h3>
+        <img src="dota/dota17.png" alt="" srcset="">
+        <p>Beneden deze text is hoe je database moet linken met deze forms bestand</p>
+        <img src="dota/dota22.png" alt="">
+        <p>Enige ding dat je hier moet veranderen is <span style="color: yellow;">"Episode"</span></p>
+        <p>Beneden deze text is wat je moet kopieeren voor toets</p>
+        <img src="dota/dota18.png" alt=""> <br>
+        <p>
+            #1- 'season' is het naam in database <br>
+            #2- 'TextType:class' <span class="text-danger">MOET</span> hier zijn <br>
+            #3- ['label' => 'Season'] is welke naam je het geeft voor forms
+        </p>
+        <h5 class="text-warning">NU BEN JE KLAAR MET FORM BESTAND CODEREN</h5>
+    </div>
+    <br><br>
+    <div class="container ninth-container">
+        <h3 class="text-warning">DEZE CODE WORDT NU GEDAAN IN CONTROLLER VOOR FORMS</h3>
+        <h3 class="text-danger">DEZE CODE WORDT GEDAAN IN FORMSCONTROLLER</h3>
+        <p>Beneden deze zin is hoe het hele route moet zien om forms te laten zien</p>
+        <img src="dota/dota23.png" alt="" srcset="">
+        <p>Beneden deze zin is alles dat je moet veranderen om forms route</p>
+        <img src="dota/dota24.png" alt=""> <br>
+        <img src="dota/dota25.png" alt=""> <br>
+        <p class="text-danger">LET OP JE TYPE JE NAAM VOOR JE FORMS in "EpisodeType::class", NIET DATABASE.</p>
+        <img src="dota/dota26.png" alt=""> <br>
+        <p>redirectToRoute is gewoon homepage van je website</p>
+        <img src="dota/dota27.png" alt="">
+        <p class="text-danger">BIJ DEZE CODE ('form' => $form) HIERBOVEN GA JE DIT TYPEN IN JOU FORMS TWIG BESTAND</p>
+        <p class="text-warning">KIJK FOTO BENEDEN OM TE KIJKEN WAT JE MOET TYPEN IN JOU FORM TWIG BESTAND</p>
+        <img src="dota/dota28.png" alt="">
+        <p>Om het alert te krijgen dat je een nieuwe serie heb toegevoeg moet je terug naar homepage bestand en deze
+            code typen helemaal boven</p>
+        <img src="dota/dota29.png" alt="">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-        <script src="/JS/dota.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="/JS/dota.js"></script>
+</body>
+
 </html>

@@ -6,6 +6,6 @@ body{
     opacity: 0;
 }
 
-.first-container, .second-container, .third-container, .fourth-container, .fifth-container, .sixth-container, .seventh-container, .eight-container{
+.first-container, .second-container, .third-container, .fourth-container, .fifth-container, .sixth-container, .seventh-container, .eight-container, .ninth-container{
     border: 2px solid white;
 }
