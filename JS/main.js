@@ -13,6 +13,7 @@ const links = document.querySelector('div.links');
 button1.addEventListener('click', changeBg1);
 button2.addEventListener('click', changeBg2);
 button3.addEventListener('click', changeBg3);
+secretButton.addEventListener('click', goToDota);
 
 //alle functions gebruikt
 function changeBg1() {
@@ -43,4 +44,8 @@ function changeBg3() {
     button1.classList.add('hidden');
     button2.classList.add('hidden');
     button3.classList.add('hidden');
+}
+
+function goToDota(){
+    window.location.href = 'dota.html';
 }

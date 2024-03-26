@@ -6,7 +6,7 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
-.change-buttons {
+.change-buttons, .button-secret {
     border-radius: 25px;
     margin: 5px;
     padding: 10px;
@@ -18,7 +18,7 @@ p {
     transform: translateY(5px);
 }
 
-.button1 {
+.button1, .button-secret {
     background-color: black;
     color: white;
 }
