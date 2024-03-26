@@ -92,7 +92,11 @@
             </div>
         </div>
         <div class="container sixth-container">
-            <p>Dit is de code die je al hebt gekregen, dus kopieer en plak deze, maar verander gewoon deze volgende namen: <br>
+            <h3 class="text-warning">DIT ALLES IS IN CONTROLLER BESTAND</h3>
+            <h3 class="text-warning">DIT ALLES IS OM HET INFORMATIE VAN DATABASE OP TE NEMEN</h3>
+            <img src="dota/dota6.png" alt=""> <br>
+            <hr>
+            <p>Dit is de code die je al hebt gekregen, dus kopieer en plak deze, maar verander gewoon deze volgende namen:<br></p>
                 <hr>
             <img src="dota/dota7.png" alt=""><br>
             <p>"/genres moet je veranderen. "app_genre_show" moet je veranderen</p>
@@ -102,13 +106,37 @@
             <hr>
             <img src="dota/dota9.png" alt=""><br>
             <p>"$genres" moet je veranderen. "Genre::class" moet je veranderen</p> 
+            <p class="text-danger">NIET VERGETEN: HOVER OP "Genre::class" EN DAN MOET JE OP "import class" DRUKKEN OM VAN DATABASE OP TE NEMEN</p>
             <hr>
             <img src="dota/dota10.png" alt=""><br>
             <p>'series/show.html.twig' moet je veranderen naar jou eigen controller. <br> "genres" en "$genres" moet je veranderen</p>
-            </p>
             <br><br>
             <hr>
-            <img src="dota/dota6.png" alt="">
+        </div>
+        <div class="container seventh-container">
+            <h3 class="text-warning">DIT ALLES IS IN TWIG BESTAND</h3>
+            <h3 class="text-warning">DEZE CODE IS ALLEEN OM ALLE DATABASE INFORMATIE TE TONEN</h3>
+            <img src="dota/dota11.png" alt="">
+            <hr>
+            <p>Dit is de code die je al hebt gekregen, dus kopieer en plak deze, maar verander gewoon deze volgende namen:<br></p>
+                <hr>
+            <img src="dota/dota12.png" alt=""><br>
+            <p>"genre" en "genres" moet je veranderen</p>
+            <hr>
+            <img src="dota/dota13.png" alt=""><br>
+            <p>"genre" moet je veranderen</p>
+            <hr>
+            <img src="dota/dota14.png" alt=""><br>
+            <p> in "path('app_genre')" moet je <span class="text-warning">"app_genre"</span> veranderen</p>
+        </div>
+        <div class="container eight-container">
+            <h3 class="text-warning">DEZE  CODE IS OM FORM TE MAKEN EN NIEUWE INFORMATIE IN DATABASE ZETTEN</h3>
+            <p>Om form te maken je in terminal dit typen: <span style="color: yellow;">symfony console make:form</span></p>
+            <p class="text-danger">LET OP: JE FORM NAAM MET MOET HOOFDLETTER BEGINNEN EN TYPE MOET OOK MET HOOFDLETTER BEGINNEN (KIJK ONDER DEZE ZIN OM TE KIJKEN HOE HET MOET)</p>
+            <p style="color: yellow;">ExampleType</p>
+            <p>Daarna moet je jou form met een specifiek database linken (kijk foto hieronder om te weten welke lijn dit vraagt)</p>
+            <img src="dota/dota16.png" alt="">
+            <p>Wanneer je dit heb gedaan krijg je een bestand die "Form" heet in jou "src" map. Nu ga je daarin coderen</p>
         </div>
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
