@@ -6,7 +6,7 @@ p {
     font-family: 'Quicksand', sans-serif;
 }
 
-.change-buttons, .button-secret {
+.change-buttons, .button-secret, .button-secret2 {
     border-radius: 25px;
     margin: 5px;
     padding: 10px;

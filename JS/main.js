@@ -5,6 +5,7 @@ const button1 = document.querySelector('button.button1');
 const button2 = document.querySelector('button.button2');
 const button3 = document.querySelector('button.button3');
 const secretButton = document.querySelector('button.button-secret');
+const secretButtonTwo = document.querySelector('button.button-secret2')
 const h1 = document.querySelector('h1');
 const writingCol = document.querySelector('div.writing-col');
 const links = document.querySelector('div.links');
@@ -14,6 +15,7 @@ button1.addEventListener('click', changeBg1);
 button2.addEventListener('click', changeBg2);
 button3.addEventListener('click', changeBg3);
 secretButton.addEventListener('click', goToDota);
+secretButtonTwo.addEventListener('click', goToDotaTwo);
 
 //alle functions gebruikt
 function changeBg1() {
@@ -36,6 +38,7 @@ function changeBg2() {
     button1.classList.add('hidden');
     button2.classList.add('hidden');
     button3.classList.add('hidden');
+    secretButtonTwo.classList.remove('hidden');
 }
 
 function changeBg3() {
@@ -48,4 +51,7 @@ function changeBg3() {
 
 function goToDota(){
     window.location.href = 'dota.html';
+}
+function goToDotaTwo(){
+    window.location.href = 'dota2.html'
 }
