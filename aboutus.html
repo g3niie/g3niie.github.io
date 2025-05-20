@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not needed</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+    }
+    .container{
+        /* background-color: skyblue;
+        color: black; */
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>REGISTRATION CONTROLLER</h1>
+        <h3>Regel 29</h3>
+        $user->setRoles(['ROLE_STUDENT']);
+
+        <br><br><br>
+
+        <h1>INDEX CONTROLLER</h1>
+        if ($this->isGranted('ROLE_STUDENT')){
+            return $this->redirectToRoute('[route]');
+        }
+
+        <br><br><br>
+
+        <h1>OWNER CONTROLLER</h1>
+        <h3>homepage route</h3>
+        public function index(EntityManagerInterface $em): Response <br>
+    { <br>
+        $[entity] = $em->getRepository([entity]::class)->findAll(); <br>
+        return $this->render('owner/index.html.twig', [ <br>
+            'controller_name' => 'OwnerController', <br>
+            '[new name for for-loop]' => $[entity], <br>
+        ]);
+    }
+
+        <p>C <b>R</b> U D</p>
+        <h3>route for read</h3>
+        #[Route('/owner/read/{id}', name: 'read_owner')] <br>
+    public function read(EntityManagerInterface $em, int $id): Response <br>
+    { <br>
+        $[entity] = $em->getRepository([entity]::class)->find($id); <br>
+        return $this->render('owner/read_inst.html.twig', [ <br>
+            'controller_name' => 'OwnerController', <br>
+            '[new name for for-loop]' => $[entity], <br>
+        ]); <br>
+    }
+
+    <br><br><br>
+    <h1>UPDATE AND DELETE CODE IN HTML</h1>
+    <img src="/IMG/UPDATE.png" alt="">
+    
+    </div>
+</body>
+</html>
